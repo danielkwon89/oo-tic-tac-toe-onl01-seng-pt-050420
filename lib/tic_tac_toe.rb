@@ -67,11 +67,11 @@ class TicTacToe
           return win_combo
         elsif combo_arr.length == 3 && combo_arr.all? {|token| token == "O"}
           return win_combo
-        end #if statement
-      end #combos.each
-    end #WIN_COMBINATIONS.each
+        end
+      end
+    end
     winner
-  end #won
+  end
   
   def full?
     if @board.include?("_")
